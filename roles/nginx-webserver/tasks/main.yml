@@ -1,0 +1,17 @@
+---
+# tasks file for nginx-webserver
+
+- package:
+        name: "nginx"
+        state: present
+
+
+- copy:
+        content: "welcome to my web : {{  ansible_nodename }}\n"
+        dest: "/var/www/html/index.html"
+
+- service:
+        name: "nginx"
+        state: started
+
+

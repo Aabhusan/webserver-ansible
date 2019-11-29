@@ -1,0 +1,11 @@
+[webserver]
+10.10.11.185 ansible_user=root  ansible_password=root123
+
+
+
+
+
+
+
+
+

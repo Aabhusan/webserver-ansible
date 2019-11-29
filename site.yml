@@ -1,0 +1,6 @@
+- name: install web server 
+  import_playbook: nginx.yml  
+
+
+- name: configure the webserver for the nodejs application
+  import_playbook: node_config.yml
